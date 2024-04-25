@@ -1,0 +1,189 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: HUYNH phat, no compapy, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  D:\KEILC_\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.8.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\luu_tru_stm32_thanh_ghi\on_button_struct\main.uvprojx
+Project File Date:  12/24/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'D:\KEILC_\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+ngat_timer.c(1): warning: In file included from...
+./ngat_timer3.h(1): warning: // comments are not allowed in this language [-Wcomment]
+#include "stm32f10x.h"                  // Device header
+                                        ^
+ngat_timer.c(1): warning: In file included from...
+./ngat_timer3.h(1): warning: In file included from...
+D:/KEILC_/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+D:/KEILC_/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+D:/KEILC_/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+ngat_timer.c(2): warning: In file included from...
+./button.h(1): warning: // comments are not allowed in this language [-Wcomment]
+#include "stm32f10x.h"                  // Device header
+                                        ^
+ngat_timer.c(2): warning: In file included from...
+./button.h(5): warning: In file included from...
+./ngat_timer3.h(1): warning: // comments are not allowed in this language [-Wcomment]
+#include "stm32f10x.h"                  // Device header
+                                        ^
+ngat_timer.c(2): warning: In file included from...
+./button.h(12): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+        bool one;
+        ^
+D:\KEILC_\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+ngat_timer.c(2): warning: In file included from...
+./button.h(9): warning: typedef requires a name [-Wmissing-declarations]
+typedef struct Button{
+^~~~~~~
+ngat_timer.c(5): warning: // comments are not allowed in this language [-Wcomment]
+        // NHAN 9 VOI TAN SO 
+        ^
+ngat_timer.c(8): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        RCC->CFGR &= ~ (1<<22);
+                  ~~ ^~~~~~~~~
+ngat_timer.c(2): warning: In file included from...
+./button.h(9): warning: padding size of 'struct Button' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct Button{
+               ^
+ngat_timer.c(42): warning: no previous prototype for function 'TIM3_IRQHandler' [-Wmissing-prototypes]
+void TIM3_IRQHandler(void)
+     ^
+ngat_timer.c(42): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIM3_IRQHandler(void)
+^
+static 
+ngat_timer.c(63): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+13 warnings generated.
+compiling ngat_timer.c...
+button.c(1): warning: In file included from...
+./button.h(1): warning: // comments are not allowed in this language [-Wcomment]
+#include "stm32f10x.h"                  // Device header
+                                        ^
+button.c(1): warning: In file included from...
+./button.h(1): warning: In file included from...
+D:/KEILC_/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+D:/KEILC_/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+D:/KEILC_/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+button.c(1): warning: In file included from...
+./button.h(5): warning: In file included from...
+./ngat_timer3.h(1): warning: // comments are not allowed in this language [-Wcomment]
+#include "stm32f10x.h"                  // Device header
+                                        ^
+button.c(1): warning: In file included from...
+./button.h(12): warning: '_Bool' is a C99 extension [-Wc99-extensions]
+        bool one;
+        ^
+D:\KEILC_\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+button.c(1): warning: In file included from...
+./button.h(9): warning: typedef requires a name [-Wmissing-declarations]
+typedef struct Button{
+^~~~~~~
+./button.h(9): warning: padding size of 'struct Button' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct Button{
+               ^
+button.c(7): warning: // comments are not allowed in this language [-Wcomment]
+        RCC->APB1ENR |= (1<<17); // usart2 
+                                 ^
+button.c(16): warning: no previous prototype for function 'sendByte' [-Wmissing-prototypes]
+void sendByte(unsigned char c)
+     ^
+button.c(16): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void sendByte(unsigned char c)
+^
+static 
+button.c(25): warning: mixing declarations and code is a C99 extension [-Wdeclaration-after-statement]
+        int j=0;
+            ^
+button.c(34): warning: no previous prototype for function 'readInput' [-Wmissing-prototypes]
+int readInput(int bit)
+    ^
+button.c(34): note: declare 'static' if the function is not intended to be used outside of this translation unit
+int readInput(int bit)
+^
+static 
+button.c(55): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+button.c(3): warning: no previous extern declaration for non-static variable 'buffer' [-Wmissing-variable-declarations]
+char buffer[1000];
+     ^
+button.c(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+char buffer[1000];
+^
+14 warnings generated.
+compiling button.c...
+linking...
+Program Size: Code=1974 RO-data=286 RW-data=4 ZI-data=1648  
+FromELF: creating hex file...
+".\Objects\main.axf" - 0 Error(s), 27 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103C8
+  ./RTE/_Target_1
+  D:/KEILC_/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/KEILC_/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device/Source/system_stm32f10x.c
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Include file:  RTE_Driver/Config/RTE_Device.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
